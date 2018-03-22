@@ -1,6 +1,7 @@
 {
   "name": "cloud",
   "version": "0.1.0",
+  "homepage": "https://idriuk.github.io/cloud",
   "private": true,
   "dependencies": {
     "gh-pages": "^1.1.0",
