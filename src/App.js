@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const api = 'https://corsback.herokuapp.com/';
+
 class App extends Component {
+
+  componentDidMount() {
+    fetch(api)
+      .then((response) => { return response.text(); })
+      .then((text) => console.log(text));
+  }
+
   render() {
     return (
       <div className="App">
