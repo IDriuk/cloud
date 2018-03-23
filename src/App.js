@@ -9,7 +9,8 @@ class App extends Component {
   componentDidMount() {
     fetch(api)
       .then((response) => { return response.text(); })
-      .then((text) => console.log(text));
+      .then((text) => console.log(text))
+      .catch(e => console.log('request failed'));
   }
 
   render() {
