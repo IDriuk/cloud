@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const api = 'https://corsback.herokuapp.com/';
+import { api } from './config';
 
 class App extends Component {
 
