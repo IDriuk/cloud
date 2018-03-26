@@ -10,9 +10,10 @@ import './index.css';
 import App from './containers/App/App';
 
 import { getAll } from './actions';
+import reducer from './reducers'
 
 const store = createStore(
-  () => {},
+  reducer,
   applyMiddleware(thunk)
 );
 
