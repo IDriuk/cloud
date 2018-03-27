@@ -4,9 +4,11 @@ import './App.css';
 class App extends Component {
 
   render() {
+    const { data } = this.props;
+
     return (
       <div className="App">
-        {this.props.data}
+        {data ? data : "Loading..." }
       </div>
     );
   }
