@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Chart from '../Chart/SvgChartPlayground';
+import Chart from '../Chart/Chart';
 
 class App extends Component {
 
