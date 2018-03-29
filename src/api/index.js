@@ -12,6 +12,6 @@ const apiUrl = isLocalhost ? 'http://localhost:3001/'
                            : 'https://corsback.herokuapp.com/';
 
 export const getAllData = (cb) => fetch(apiUrl)
-                                  .then((response) => { return response.text(); })
-                                  .then((text) => cb(text))
+                                  .then((response) => { return response.json(); })
+                                  .then((obj) => cb(obj))
                                   .catch(e => console.log('request failed'));

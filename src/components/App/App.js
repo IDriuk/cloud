@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Chart from '../Chart/Chart';
+import ChartContainer from '../../containers/ChartContainer';
 
 class App extends Component {
 
   render() {
-    const { data } = this.props;
 
     return (
       <div className="App">
-        {data ? data : "Loading..." }
 
-        <Chart />
+        <ChartContainer />
 
       </div>
     );

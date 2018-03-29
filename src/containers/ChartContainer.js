@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import App from '../components/App/App';
+import Chart from '../components/Chart/Chart';
 
-const AppContainer = ({ data }) => (
-  <App data={data}/>
+const ChartContainer = ({ data }) => (
+  <Chart data={data}/>
 )
 
-AppContainer.propTypes = {
-  data: PropTypes.string
+ChartContainer.propTypes = {
+  data: PropTypes.object
 }
 
 const mapStateToProps = state => ({
@@ -17,4 +17,4 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps
-)(AppContainer)
+)(ChartContainer)
