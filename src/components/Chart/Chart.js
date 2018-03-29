@@ -7,9 +7,7 @@ export default ({ data }) => {
   if (data) {
     const { coordinates } = data;
     let M = coordinates.splice(0, 1)[0];
-    console.log(M);
     d = coordinates.reduce((acc, {x, y}) => `${acc}L${x},${y}`, `M${M.x},${M.y}` );
-    console.log(d);
   }
 
   return (
