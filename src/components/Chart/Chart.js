@@ -48,7 +48,7 @@ class Chart extends Component {
 
     return (
       <div className="Chart">
-        <svg
+        {/* <svg
           onMouseEnter={this.onMouseEnter}
           onMouseLeave={this.onMouseLeave}
           ref={node => { this.svgNode = node; }}
@@ -62,7 +62,7 @@ class Chart extends Component {
                 <circle cx={x} cy={y} fill="#4D90FE" r={4} ></circle>
               </g>
           </g>
-        </svg>
+        </svg> */}
       </div>
     );
   }

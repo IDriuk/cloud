@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import Chart from '../components/Chart/Chart';
 
-const ChartContainer = ({ data }) => (
-  <Chart data={data}/>
-)
+const ChartContainer = ({ data }) => <Chart data={data}/>
 
 ChartContainer.propTypes = {
   data: PropTypes.object
