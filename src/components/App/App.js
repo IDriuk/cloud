@@ -67,7 +67,7 @@ class App extends Component {
                 <div id="pcc-account-chooser-container">
                   <div className="cfc-accountchooser-dynamic">
                     <button className="cfc-accountchooser-link">
-                      <img src="https://lh6.googleusercontent.com/-hk3W3L-0IpA/AAAAAAAAAAI/AAAAAAAAAAA/5teywp-SKt4/W96-H96/photo.jpg" />
+                      <img alt="user" src="https://lh6.googleusercontent.com/-hk3W3L-0IpA/AAAAAAAAAAI/AAAAAAAAAAA/5teywp-SKt4/W96-H96/photo.jpg" />
                     </button>
                   </div>
                 </div>
