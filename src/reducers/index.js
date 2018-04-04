@@ -1,12 +1,10 @@
-import * as types from '../constants/ActionTypes'
+import { combineReducers } from 'redux';
+import ChartReducer from './chart_reducer';
+import UserReducer from './user_reducer';
 
-export default (state = {}, action) => {
-  switch (action.type) {
-    case types.RECEIVE_ALL:
-      return {
-        data: action.data
-      }
-    default:
-      return state
-  }
-}
+const rootReducer = combineReducers({
+  coordinates: ChartReducer,
+  userName: UserReducer
+});
+
+export default rootReducer;

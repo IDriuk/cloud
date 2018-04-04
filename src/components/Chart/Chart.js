@@ -15,7 +15,7 @@ class Chart extends Component {
   }
 
   onMouseMove({ clientX, clientY }) {
-    const { data: { coordinates }} = this.props;
+    const { coordinates } = this.props;
     const { rect: { x }, dotIndex } = this.state;
     const currentX = clientX - x - 20 /* maybe padding in css */ ;
     const index = coordinates.findIndex((c) => c.x > currentX);
@@ -35,16 +35,16 @@ class Chart extends Component {
   }
 
   render() {
-    const { data } = this.props;
+    const { coordinates } = this.props;
     const { dotIndex } = this.state;
-    if (!data) return <div> Loading... </div>
+    if (!coordinates.length) return <div> Loading... </div>
 
-    const coordinates = [...data.coordinates];
+    const tempCoordinates = [...coordinates];
 
-    let M = coordinates.splice(0, 1)[0];
-    const d = coordinates.reduce((acc, {x, y}) => `${acc}L${x},${y}`, `M${M.x},${M.y}` );
+    let M = tempCoordinates.splice(0, 1)[0];
+    const d = tempCoordinates.reduce((acc, {x, y}) => `${acc}L${x},${y}`, `M${M.x},${M.y}` );
 
-    const { x, y } = coordinates[dotIndex];
+    const { x, y } = tempCoordinates[dotIndex];
 
     return (
       <div className="Chart">

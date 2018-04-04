@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import Chart from '../components/Chart/Chart';
 
-const ChartContainer = ({ data }) => <Chart data={data}/>
+const ChartContainer = ({ coordinates}) => <Chart coordinates={coordinates}/>
 
 ChartContainer.propTypes = {
-  data: PropTypes.object
+  coordinates: PropTypes.array
 }
 
 const mapStateToProps = state => ({
-  data: state.data
+  coordinates: state.coordinates
 })
 
 export default connect(
