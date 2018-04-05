@@ -56,7 +56,7 @@ class PlatformBar extends Component {
                         <SearchIcon />
                       </span>
                     </span>
-                    <input className="p6n-search-input"></input>
+                    <input className="p6n-search-input" type="text"></input>
                   </div>
                 </div>
               </div>
