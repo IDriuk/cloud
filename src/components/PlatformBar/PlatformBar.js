@@ -29,18 +29,20 @@ class PlatformBar extends Component {
             <div className="p6n-platformbar-container p6n-prober-logo">
               <div className="p6n-platformbar-left">
                 <button className="p6n-platformbar-colored-icon-container p6n-platformbar-button md-primary md-button md-platform-bar-theme md-ink-ripple md-icon-button">
-                  <MenuIcon />
+                  <span className="icon md-platform-bar-theme"><MenuIcon /></span>
                 </button>
                 <a className="p6n-product-logo md-platform-bar-theme">
                   <div className="p6n-logo p6n-logo-theme-light">
-                    <GoogleLogo />
-                    <CloudConsoleLogo />
+                    <span className="icon p6n-logo-google-text"> <GoogleLogo /> </span>
+                    <span className="icon p6n-logo-cloud-platform-text"> <CloudConsoleLogo /> </span>
                   </div>
                 </a>
                 <div className="p6n-color-white p6n-project-switcher p6n-picker-wrapper">
                   <div className="p6n-dropdown-menu">
                     <a className="goog-flat-menu-button md-platform-bar-theme">
-                      <ProjectIcon />
+                      <span className="icon p6n-platformbar-icon p6n-platformbar-purview-icon md-platform-bar-theme">
+                        <ProjectIcon />
+                      </span>
                       <span className="p6n-label p6n-project-switcher-project-name">{this.props.userName}</span>
                     </a>
                   </div>
@@ -50,7 +52,9 @@ class PlatformBar extends Component {
                 <div className="p6n-search-container">
                   <div className="p6n-search-bar p6n-color-white">
                     <span className="p6n-platformbar-utility">
-                      <SearchIcon />
+                      <span className="icon md-primary md-platform-bar-theme">
+                        <SearchIcon />
+                      </span>
                     </span>
                     <input className="p6n-search-input"></input>
                   </div>
@@ -59,22 +63,22 @@ class PlatformBar extends Component {
               <div className="p6n-platformbar-right">
                 <div className="p6n-platformbar-left">
                   <button className="p6n-platformbar-colored-icon-container p6n-platformbar-button md-primary md-button md-platform-bar-theme md-ink-ripple md-icon-button">
-                    <GiftIcon />
+                    <span className="icon md-platform-bar-theme"><GiftIcon /></span>
                   </button>
                   <button className="p6n-platformbar-colored-icon-container p6n-platformbar-button md-primary md-button md-platform-bar-theme md-ink-ripple md-icon-button">
-                    <DevShellIcon />
+                    <span className="icon md-platform-bar-theme"><DevShellIcon /></span>
                   </button>
                   <button className="p6n-platformbar-colored-icon-container p6n-platformbar-button md-primary md-button md-platform-bar-theme md-ink-ripple md-icon-button">
-                    <FeedBackIcon />
+                    <span className="icon md-platform-bar-theme"><FeedBackIcon /></span>
                   </button>
                   <button className="p6n-platformbar-colored-icon-container p6n-platformbar-button md-primary md-button md-platform-bar-theme md-ink-ripple md-icon-button">
-                    <HelpIcon />
+                    <span className="icon md-platform-bar-theme"><HelpIcon /></span>
                   </button>
                   <button className="p6n-platformbar-colored-icon-container p6n-platformbar-button md-primary md-button md-platform-bar-theme md-ink-ripple md-icon-button">
-                    <NotificationsIcon />
+                    <span className="icon md-platform-bar-theme"><NotificationsIcon /></span>
                   </button>
                   <button className="p6n-platformbar-utility p6n-utilities-menu-icon md-icon-button md-primary md-button md-platform-bar-theme md-ink-ripple">
-                    <SettingsIcon />
+                    <span className="icon md-platform-bar-theme"><SettingsIcon /></span>
                   </button>
                 </div>
                 <div id="pcc-account-chooser-container">

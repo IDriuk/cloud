@@ -1,0 +1,349 @@
+.p6n-system-bar {
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+  position: static;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: top cubic-bezier(0.4,0.0,0.2,1) .2s;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.p6n-platformbar-container {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  height: 100%;
+}
+
+.p6n-platformbar-left {
+  min-width: 0;
+  display: flex;
+}
+
+.p6n-platformbar-middle {
+  padding: 0 12px;
+  flex-grow: 1;
+}
+
+.p6n-platformbar-right {
+  display: flex;
+  align-items: center;
+  padding-right: 7px;
+}
+
+/* button */
+.md-button {
+  letter-spacing: .01em;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  min-height: 36px;
+  min-width: 88px;
+  line-height: 36px;
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  border-radius: 2px;
+  box-sizing: border-box;
+  outline: none;
+  border: 0;
+  padding: 0 6px;
+  margin: 6px 8px;
+  background: transparent;
+  color: currentColor;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: inherit;
+  font-variant: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  transition: box-shadow .4s cubic-bezier(0.25,0.8,0.25,1),background-color .4s cubic-bezier(0.25,0.8,0.25,1);
+}
+
+.md-button.md-primary {
+  color: rgb(59,120,231);
+}
+
+.md-button.md-icon-button {
+  margin: 0 6px;
+  height: 40px;
+  min-width: 0;
+  line-height: 24px;
+  padding: 8px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.p6n-platformbar-button.md-button {
+  margin: 0;
+  display: block;
+  height: 40px;
+}
+
+.p6n-platformbar-button.md-icon-button {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.md-button.md-platform-bar-theme.md-primary {
+  color: rgb(255,255,255);
+}
+/* end button */
+
+.p6n-product-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.p6n-logo {
+  display: inline-block;
+}
+
+.p6n-platformbar-container .p6n-logo, {
+  height: 24px;
+}
+
+.icon {
+  color: rgba(0,0,0,0.54);
+}
+
+.icon {
+  margin: auto;
+  background-repeat: no-repeat no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+}
+
+.icon {
+  min-height: initial;
+  min-width: initial;
+}
+
+.p6n-logo-google-text {
+  width: 72px;
+}
+
+.p6n-platformbar-container .p6n-logo,
+.p6n-platformbar-container .p6n-logo-google-text,
+.p6n-platformbar-container .p6n-logo-cloud-platform-text {
+  height: 24px;
+}
+
+.p6n-logo.p6n-logo-theme-light .icon{
+  fill: #fff;
+  opacity: 1;
+}
+
+.p6n-logo-cloud-platform-text {
+  width: 130px;
+  margin-left: -2px;
+}
+
+.p6n-picker-wrapper {
+  display: flex;
+  min-width: 0;
+}
+
+.p6n-project-switcher {
+  margin-right: 8px;
+  height: 36px;
+}
+
+.p6n-dropdown-menu {
+  display: inline-block;
+  position: relative;
+}
+
+.p6n-platformbar-container .p6n-dropdown-menu {
+  display: flex;
+  min-width: 0;
+}
+
+.goog-flat-menu-button {
+  background-repeat: no-repeat;
+  border: 1.1px solid transparent;
+  border-radius: 2px;
+  color: rgba(0,0,0,.987);
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  height: 24px;
+  line-height: 22px;
+  margin: 0;
+  min-width: 0;
+  padding: 0 6.9px;
+  position: relative;
+  text-decoration: none!important;
+  text-transform: none;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.goog-flat-menu-button {
+  padding-right: 24px;
+  text-align: left;
+}
+
+.p6n-platformbar-container .p6n-dropdown-menu a {
+  text-decoration: none;
+  color: rgba(0,0,0,.987);
+  display: flex;
+}
+
+.p6n-platformbar-container .p6n-dropdown-menu>a {
+  font-size: 14px;
+  background: transparent;
+  color: #fff;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.p6n-platformbar-container .p6n-flat-dropdown .goog-flat-menu-button, .p6n-platformbar-container .p6n-dropdown-menu .goog-flat-menu-button {
+  border: none;
+  height: auto;
+  line-height: inherit;
+  font-size: 13px;
+}
+
+.p6n-platformbar-container .p6n-color-white .p6n-dropdown-menu > a,
+.p6n-platformbar-container .p6n-color-white .p6n-project-switcher-project-name,
+.p6n-platformbar-container .p6n-color-white .goog-flat-menu-button:after {
+  color: #fff;
+  border-top-color: #fff;
+}
+
+.p6n-platformbar-container .p6n-dropdown-menu a .p6n-platformbar-icon {
+  flex: none;
+  margin-right: 4px;
+}
+
+.icon.md-platform-bar-theme.p6n-platformbar-icon.p6n-platformbar-purview-icon {
+  color: #fff;
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+}
+
+.p6n-platformbar-container .p6n-color-white .p6n-dropdown-menu>a,
+.p6n-platformbar-container .p6n-color-white .p6n-project-switcher-project-name,
+.p6n-platformbar-container .p6n-color-white .goog-flat-menu-button:after {
+  color: #fff;
+  border-top-color: #fff;
+}
+
+.p6n-platformbar-container .p6n-project-switcher .goog-flat-menu-button span {
+  position: relative;
+  top: 10px;
+}
+
+.p6n-platformbar-right .p6n-dropdown-menu .goog-flat-menu-button>.p6n-label,
+.p6n-platformbar-left .p6n-dropdown-menu .goog-flat-menu-button>.p6n-label,
+.p6n-platformbar-right .p6n-org-switcher>.p6n-org-switcher-read-only,
+.p6n-platformbar-left .p6n-org-switcher>.p6n-org-switcher-read-only .p6n-platformbar-right .p6n-project-switcher>.p6n-project-switcher-read-only,
+.p6n-platformbar-left .p6n-project-switcher>.p6n-project-switcher-read-only {
+  max-width: 160px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.p6n-search-container {
+  max-width: 512px;
+  position: relative;
+}
+
+.p6n-platformbar-middle .p6n-search-container {
+  margin: 0 auto;
+}
+
+.p6n-search-bar {
+  display: flex;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 2px;
+}
+
+.p6n-search-bar {
+  cursor: text;
+}
+
+.p6n-search-bar.p6n-color-white {
+  background: rgba(255,255,255,0.12);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 1px 2px 0 rgba(0,0,0,0.07), 0 2px 1px -2px rgba(0,0,0,0.1), 0 1px 5px 0 rgba(0,0,0,0.06);
+}
+
+.p6n-search-bar .p6n-platformbar-utility {
+  margin: 0 19px;
+}
+
+.p6n-platformbar-utility .icon {
+  width: 18px;
+}
+
+.icon.md-platform-bar-theme.md-primary {
+  color: rgb(255,255,255);
+}
+
+input[type=text], input[type=password], .jfk-textinput {
+  height: 24px;
+  padding: 0 6.9px 1px;
+  transition: border-color ease .1s;
+}
+
+input[type=text].p6n-search-input {
+  height: 36px;
+  line-height: 36px;
+  font-size: 15px;
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  margin-right: 16px;
+}
+
+.cfc-accountchooser-dynamic {
+  height: 38px;
+}
+
+.cfc-accountchooser-link {
+  border: 0;
+  background: none;
+  text-decoration: none;
+  padding: 0;
+  height: 38px;
+}
+
+.cfc-accountchooser-link img , .cfc-accountchooser-static  img {
+  border-radius: 50%;
+  height: 30px;
+  vertical-align: middle;
+  width: 30px;
+  display: block;
+  object-fit: cover;
+}
+
+.md-button.md-platform-bar-theme.md-primary:not([disabled]) .icon {
+  color: rgb(255,255,255);
+}
