@@ -52,3 +52,19 @@ div, span, applet, object, iframe {
   padding: 0;
   vertical-align: baseline;
 }
+
+.flex {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.flex-none {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+}
+
+.layout-column{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
