@@ -13,7 +13,21 @@ class App extends Component {
 
         <PlatformBarContainer />
 
-        {/* <ChartContainer /> */}
+        <div className="pan-shell-main-container layout-row flex">
+          <div className="p6n-chrome layout-column">
+            <div className="p6n-vulcan-content layout-row flex">
+              <div className="pan-upgrade-panel-container-outer">
+
+                {/* NavPanel */}
+                <div className="pan-upgrade-panel pan-upgrade-panel-color-white pan-upgrade-panel-open"></div>
+
+                {/* MainContentPanel */}
+                <div className="pan-upgrade-panel pan-upgrade-panel-fill pan-upgrade-panel-open pan-upgrade-panel-color-white layout-row"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     );
