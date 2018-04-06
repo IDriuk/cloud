@@ -37,7 +37,7 @@ class Chart extends Component {
   render() {
     const { coordinates } = this.props;
     const { dotIndex } = this.state;
-    if (!coordinates.length) return <div> Loading... </div>
+    if (!coordinates || !coordinates.length) return <div> Loading... </div>
 
     const tempCoordinates = [...coordinates];
 
