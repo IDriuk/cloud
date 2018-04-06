@@ -212,14 +212,15 @@
   display: flex;
 }
 
-.p6n-platformbar-container .p6n-dropdown-menu>a {
+.p6n-platformbar-container .p6n-dropdown-menu > a {
   font-size: 14px;
   background: transparent;
   color: #fff;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.p6n-platformbar-container .p6n-flat-dropdown .goog-flat-menu-button, .p6n-platformbar-container .p6n-dropdown-menu .goog-flat-menu-button {
+.p6n-platformbar-container .p6n-flat-dropdown .goog-flat-menu-button,
+.p6n-platformbar-container .p6n-dropdown-menu .goog-flat-menu-button {
   border: none;
   height: auto;
   line-height: inherit;
@@ -245,7 +246,7 @@
   height: 18px;
 }
 
-.p6n-platformbar-container .p6n-color-white .p6n-dropdown-menu>a,
+.p6n-platformbar-container .p6n-color-white .p6n-dropdown-menu > a,
 .p6n-platformbar-container .p6n-color-white .p6n-project-switcher-project-name,
 .p6n-platformbar-container .p6n-color-white .goog-flat-menu-button:after {
   color: #fff;
@@ -259,9 +260,9 @@
 
 .p6n-platformbar-right .p6n-dropdown-menu .goog-flat-menu-button>.p6n-label,
 .p6n-platformbar-left .p6n-dropdown-menu .goog-flat-menu-button>.p6n-label,
-.p6n-platformbar-right .p6n-org-switcher>.p6n-org-switcher-read-only,
-.p6n-platformbar-left .p6n-org-switcher>.p6n-org-switcher-read-only .p6n-platformbar-right .p6n-project-switcher>.p6n-project-switcher-read-only,
-.p6n-platformbar-left .p6n-project-switcher>.p6n-project-switcher-read-only {
+.p6n-platformbar-right .p6n-org-switcher > .p6n-org-switcher-read-only,
+.p6n-platformbar-left .p6n-org-switcher > .p6n-org-switcher-read-only .p6n-platformbar-right .p6n-project-switcher > .p6n-project-switcher-read-only,
+.p6n-platformbar-left .p6n-project-switcher > .p6n-project-switcher-read-only {
   max-width: 160px;
   display: inline-block;
   vertical-align: middle;
@@ -292,7 +293,10 @@
 
 .p6n-search-bar.p6n-color-white {
   background: rgba(255,255,255,0.12);
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 1px 2px 0 rgba(0,0,0,0.07), 0 2px 1px -2px rgba(0,0,0,0.1), 0 1px 5px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05),
+  0 1px 2px 0 rgba(0,0,0,0.07),
+  0 2px 1px -2px rgba(0,0,0,0.1),
+  0 1px 5px 0 rgba(0,0,0,0.06);
 }
 
 .p6n-search-bar .p6n-platformbar-utility {
@@ -336,7 +340,8 @@ input[type=text].p6n-search-input {
   height: 38px;
 }
 
-.cfc-accountchooser-link img , .cfc-accountchooser-static  img {
+.cfc-accountchooser-link img ,
+.cfc-accountchooser-static  img {
   border-radius: 50%;
   height: 30px;
   vertical-align: middle;
