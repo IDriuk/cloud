@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import PlatformBarContainer from '../../containers/PlatformBarContainer';
+import NavPanel from '../NavPanel/NavPanel';
 // import ChartContainer from '../../containers/ChartContainer';
 
 class App extends Component {
@@ -18,11 +19,9 @@ class App extends Component {
             <div className="p6n-vulcan-content layout-row flex">
               <div className="pan-upgrade-panel-container-outer">
 
-                {/* NavPanel */}
-                <div className="pan-upgrade-panel pan-upgrade-panel-color-white pan-upgrade-panel-open"></div>
-
+                <NavPanel />
                 {/* MainContentPanel */}
-                <div className="pan-upgrade-panel pan-upgrade-panel-fill pan-upgrade-panel-open pan-upgrade-panel-color-white layout-row"></div>
+                {/* <div className="pan-upgrade-panel pan-upgrade-panel-fill pan-upgrade-panel-open pan-upgrade-panel-color-white layout-row"></div> */}
 
               </div>
             </div>

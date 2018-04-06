@@ -2,3 +2,19 @@
   height: 100%;
   min-width: 900px;
 }
+
+.p6n-vulcan-content {
+  position: relative;
+}
+
+.p6n-chrome {
+  box-flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.pan-upgrade-panel-container-outer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

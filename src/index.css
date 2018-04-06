@@ -90,8 +90,19 @@ input[type=text] {
   box-sizing: border-box;
 }
 
-.layout-column{
+.layout, .layout-column, .layout-row {
   box-sizing: border-box;
   display: flex;
+}
+
+.layout-column{
   flex-direction: column;
+}
+
+.layout-row {
+  flex-direction: row;
+}
+
+.layout-column > .flex {
+  min-height: 0;
 }
