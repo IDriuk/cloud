@@ -15,3 +15,26 @@
 .pan-upgrade-panel:not(.pan-upgrade-panel-dragging) {
   transition: all cubic-bezier(0.4,0.0,0.2,1) .2s;
 }
+
+.pan-upgrade-panel-content-wrapper {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  position: relative;
+  transition: all cubic-bezier(0.4,0.0,0.2,1) .2s;
+}
+
+.pan-upgrade-panel-side-left, .pan-upgrade-panel-side-right {
+  overflow-x: visible;
+}
+
+.pan-upgrade-panel-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
