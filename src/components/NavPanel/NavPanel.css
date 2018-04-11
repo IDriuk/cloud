@@ -38,3 +38,27 @@
   flex: 1;
   min-width: 0;
 }
+
+/* experimenting */
+
+.cfc-icon-size-large {
+  color: currentcolor;
+  fill: currentcolor;
+  height: 32px;
+  width: 32px;
+}
+
+div.pan-upgrade-panel-content > a.cfc-section-link,
+div.pan-upgrade-panel-content > a.cfc-section-link > div.cfc-toolbar-tools {
+  display: flex;
+  width: 100%;
+}
+
+.cfc-section-link .cfc-toolbar-tools .cfc-section-name {
+  color: rgba(0,0,0,0.655);
+  font-family: "roboto";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: .005em;
+  line-height: 24px;
+}
