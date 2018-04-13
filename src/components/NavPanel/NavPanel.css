@@ -45,9 +45,9 @@
 }
 
 .cfc-section-nav-body {
-    flex-base: 100;
-    border-top: 1.1px solid rgba(0,0,0,0.12);
-    overflow-y: auto;
+  width: 100%;
+  border-top: 1.1px solid rgba(0,0,0,0.12);
+  overflow-y: auto;
 }
 
 .cfc-icon-size-large {
@@ -100,4 +100,13 @@ div.pan-upgrade-panel-content > a.cfc-section-link > div.cfc-toolbar-tools {
 .mat-button .mat-icon svg{
   fill: currentColor;
   color: currentColor;
+}
+
+.mat-button-wrapper {
+  display: flex;
+  padding: 30px;
+}
+
+.mat-button-wrapper .cfc-page-displayName {
+  margin-left: 15px;
 }
