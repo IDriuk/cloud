@@ -17,7 +17,7 @@ class Chart extends Component {
   onMouseMove({ clientX, clientY }) {
     const { coordinates } = this.props;
     const { rect: { x }, dotIndex } = this.state;
-    const currentX = clientX - x - 20 /* maybe padding in css */ ;
+    const currentX = clientX - x ;
     const index = coordinates.findIndex((c) => c.x > currentX);
     if ( index !== dotIndex && index >= 0 && index < coordinates.length - 1 ) this.setState({ dotIndex: index });
   }

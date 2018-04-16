@@ -3,7 +3,7 @@ import './App.css';
 
 import PlatformBarContainer from '../../containers/PlatformBarContainer';
 import NavPanel from '../NavPanel/NavPanel';
-// import ChartContainer from '../../containers/ChartContainer';
+import ChartContainer from '../../containers/ChartContainer';
 
 class App extends Component {
 
@@ -22,6 +22,10 @@ class App extends Component {
                 <NavPanel />
                 {/* MainContentPanel */}
                 {/* <div className="pan-upgrade-panel pan-upgrade-panel-fill pan-upgrade-panel-open pan-upgrade-panel-color-white layout-row"></div> */}
+
+                <div className="chart-wrapper">
+                  <ChartContainer />
+                </div>
 
               </div>
             </div>
